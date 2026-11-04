@@ -6,7 +6,7 @@
 
 ### A modern test & exam platform where students never need an account.
 
-[![Live](https://img.shields.io/badge/Live-testigo--beryl.vercel.app-000?logo=vercel&logoColor=white)](https://testigo-beryl.vercel.app)
+[![Live](https://img.shields.io/badge/Live-testigo.site-000?logo=vercel&logoColor=white)](https://testigo.site)
 [![Next.js 16](https://img.shields.io/badge/Next.js-16-000?logo=next.js&logoColor=white)](https://nextjs.org)
 [![Firebase](https://img.shields.io/badge/Firebase-Auth-FFCA28?logo=firebase&logoColor=white)](https://firebase.google.com)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Neon-336791?logo=postgresql&logoColor=white)](https://neon.tech)
@@ -24,7 +24,7 @@ Students access tests through a short code or a direct link, take the test in a 
 
 Built for tutors, coaching centers, schools, and anyone who needs to run assessments without the overhead and friction of a full LMS.
 
-> **Note:** This is a showcase repository. The source code is private. This repo exists to showcase the project's features, architecture, and capabilities. The live demo is available at [testigo-beryl.vercel.app](https://testigo-beryl.vercel.app).
+> **Note:** This is a showcase repository. The source code is private. This repo exists to showcase the project's features, architecture, and capabilities. The live demo is available at [testigo.site](https://testigo.site).
 
 ---
 
@@ -67,29 +67,63 @@ Built for tutors, coaching centers, schools, and anyone who needs to run assessm
 
 ## 🏗️ Architecture
 
+```mermaid
+graph TB
+    subgraph Client["Client (Browser)"]
+        UI["React UI<br/>shadcn/ui + Tailwind 4<br/>Framer Motion"]
+        FirebaseSDK["Firebase Client SDK<br/>Email/Password + Google"]
+    end
+
+    subgraph Vercel["Vercel (Serverless)"]
+        NextJS["Next.js 16<br/>App Router — single SPA route"]
+        APIRoutes["API Routes<br/>TypeScript + Zod validation"]
+        NextAuth["NextAuth v4<br/>JWT session management"]
+        FirebaseAdmin["Firebase Admin SDK<br/>Token verification"]
+    end
+
+    subgraph Neon["Neon Postgres"]
+        Prisma["Prisma ORM"]
+        DB[("PostgreSQL<br/>13 models")]
+    end
+
+    subgraph Firebase["Firebase Auth"]
+        FirebaseAuth["Firebase Authentication<br/>Email verification<br/>Google sign-in"]
+    end
+
+    UI -->|"user interactions"| NextJS
+    NextJS --> APIRoutes
+    APIRoutes --> NextAuth
+    APIRoutes --> FirebaseAdmin
+    FirebaseSDK -->|"ID token"| APIRoutes
+    FirebaseAdmin -->|"verify token"| FirebaseAuth
+    APIRoutes --> Prisma
+    Prisma --> DB
+    NextAuth -->|"session JWT"| UI
 ```
-┌──────────────────────────────────────────────────────────┐
-│                        Vercel                             │
-│                                                           │
-│   Next.js 16 (App Router) — single-route SPA on "/"      │
-│   ┌──────────────┐  ┌──────────────┐  ┌──────────────┐    │
-│   │  React UI     │  │  API Routes  │  │  Firebase    │    │
-│   │  shadcn/ui    │  │  (TypeScript)│  │  Auth        │    │
-│   │  Tailwind 4   │  │  Zod validation│ │  + NextAuth  │    │
-│   └──────────────┘  └──────┬───────┘  └──────────────┘    │
-│                            │                              │
-└────────────────────────────┼──────────────────────────────┘
-                             │
-                             ▼
-┌──────────────────────────────────────────────────────────┐
-│                    Neon Postgres                          │
-│                                                           │
-│   Prisma ORM — 13 models:                                │
-│   Admin · Test · Category · Section · Question ·          │
-│   Batch · BatchStudent · TestBatch · Whitelist ·          │
-│   Invitation · Participant · Attempt · Response           │
-└──────────────────────────────────────────────────────────┘
+
+<details>
+<summary>📊 Database schema (13 models)</summary>
+
+```mermaid
+erDiagram
+    Admin ||--o{ Test : creates
+    Test ||--o{ Question : contains
+    Test ||--o{ Section : has
+    Test ||--o{ Whitelist : restricts
+    Test ||--o{ Invitation : invites
+    Test ||--o{ Participant : hosts
+    Test ||--o{ Attempt : tracks
+    Test }o--o{ Category : grouped_by
+    Test }o--o{ Batch : assigned_to
+    Section ||--o{ Question : contains
+    Batch ||--o{ BatchStudent : has
+    Batch ||--o{ TestBatch : assigns
+    Participant ||--o{ Attempt : makes
+    Attempt ||--o{ Response : has
+    Question ||--o{ Response : answered_by
 ```
+
+</details>
 
 ---
 
@@ -119,7 +153,7 @@ Built for tutors, coaching centers, schools, and anyone who needs to run assessm
 
 ## 🚀 Live Demo
 
-The platform is live at **[testigo-beryl.vercel.app](https://testigo-beryl.vercel.app)**.
+The platform is live at **[testigo.site](https://testigo.site)**.
 
 - **Students** can enter a test code (if they have one) or use a direct link
 - **Admins** can sign in with their credentials
@@ -178,7 +212,7 @@ See [LICENSE](LICENSE) for the full terms.
 
 <div align="center">
 
-**[Live Demo](https://testigo-beryl.vercel.app)** · **[Report a Bug](https://github.com/Qadyyr/Testigo-Showcase/issues)** · **[Request a Feature](https://github.com/Qadyyr/Testigo-Showcase/issues)**
+**[Live Demo](https://testigo.site)** · **[Report a Bug](https://github.com/Qadyyr/Testigo-Showcase/issues)** · **[Request a Feature](https://github.com/Qadyyr/Testigo-Showcase/issues)**
 
 Built by [Qadyyr](https://github.com/Qadyyr) & Shadowolf Systems
 
