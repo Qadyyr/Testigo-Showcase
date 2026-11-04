@@ -28,7 +28,35 @@ Built for tutors, coaching centers, schools, and anyone who needs to run assessm
 
 ---
 
-## ✨ Features
+## Screenshots
+
+<div align="center">
+
+### Home — Enter a test code
+
+<img src="images/home.png" alt="Home page" width="600" />
+
+### Admin Dashboard — Overview with stats and activity
+
+<img src="images/dashboard.png" alt="Admin dashboard" width="600" />
+
+### Create a Test — Bulk import with live validation
+
+<img src="images/create-test.png" alt="Create test wizard" width="600" />
+
+### Take a Test — MCQ with timer and question palette
+
+<img src="images/take-test.png" alt="Test-taking interface" width="600" />
+
+### Analytics — Score distribution and per-question difficulty
+
+<img src="images/analytics.png" alt="Analytics dashboard" width="600" />
+
+</div>
+
+---
+
+## Features
 
 ### For Students
 - **No account, no friction** — access tests via a 6-character code or a direct link
@@ -41,7 +69,7 @@ Built for tutors, coaching centers, schools, and anyone who needs to run assessm
 - **Section-wise tests** — tests can be divided into sections (e.g. English, Math, IQ) with sequential navigation and per-section timers
 
 ### For Educators
-- **4-step test creation wizard** — details → settings → access control → review & publish
+- **4-step test creation wizard** — details, settings, access control, review and publish
 - **Bulk question import** — paste questions in CSV, JSON, or Markdown, with a live dry-run validator
 - **Three question types** — multiple choice (single or multi-correct), true/false, and short answer
 - **Test sections** — divide tests into sections with passages, multi-question pages, and sequential locking
@@ -65,7 +93,7 @@ Built for tutors, coaching centers, schools, and anyone who needs to run assessm
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph TB
@@ -102,7 +130,7 @@ graph TB
 ```
 
 <details>
-<summary>📊 Database schema (13 models)</summary>
+<summary>Database schema (13 models)</summary>
 
 ```mermaid
 erDiagram
@@ -127,31 +155,7 @@ erDiagram
 
 ---
 
-## 📸 Screenshots
-
-<div align="center">
-
-### Home — Enter a test code
-
-<img src="images/home-card.png" alt="Home page" width="600" />
-
-### Create a test
-
-<img src="images/mock-create.png" alt="Create test wizard" width="600" />
-
-### Take a test
-
-<img src="images/mock-take.png" alt="Test-taking interface" width="600" />
-
-### Analytics
-
-<img src="images/mock-analytics.png" alt="Analytics dashboard" width="600" />
-
-</div>
-
----
-
-## 🚀 Live Demo
+## Live Demo
 
 The platform is live at **[testigo.site](https://testigo.site)**.
 
@@ -161,7 +165,7 @@ The platform is live at **[testigo.site](https://testigo.site)**.
 
 ---
 
-## 🛡️ Platform Integrity
+## Platform Integrity
 
 - **Firebase Authentication** with email verification before account activation
 - **Admin approval workflow** — even after email verification, accounts need admin approval
@@ -174,7 +178,7 @@ The platform is live at **[testigo.site](https://testigo.site)**.
 
 ---
 
-## 🧑‍💻 Technology Stack
+## Technology Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -191,7 +195,7 @@ The platform is live at **[testigo.site](https://testigo.site)**.
 
 ---
 
-## 🎯 Use Cases
+## Use Cases
 
 - **Schools and universities** — weekly quizzes, midterms, practice tests
 - **Coaching and tutoring centers** — batch exams with Student ID verification
@@ -202,7 +206,7 @@ The platform is live at **[testigo.site](https://testigo.site)**.
 
 ---
 
-## 📄 License
+## License
 
 This is a personal project. The source code is private and not available for public use, modification, or distribution. The platform is showcased here for portfolio and demonstration purposes only.
 
