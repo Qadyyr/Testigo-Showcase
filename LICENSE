@@ -1,0 +1,94 @@
+Testigo — Custom Proprietary License
+
+Copyright © 2026 Qadyyr. All rights reserved.
+
+---
+
+## 1. Ownership
+
+This software and its associated source code, documentation, assets, and
+design (collectively, the "Software") are the personal property of Qadyyr
+(the "Author"). The Author retains all intellectual property rights, including
+but not limited to copyright, trademark, and any other proprietary rights, in
+and to the Software.
+
+This is a personal project. No organization, company, or third party holds any
+claim to the Software.
+
+## 2. Source Code Visibility
+
+The source code is publicly visible on GitHub for reference, educational, and
+portfolio purposes. Visibility of the source code does **not** constitute a
+grant of any rights to use, copy, modify, merge, publish, distribute,
+sublicense, or sell the Software.
+
+## 3. Permitted Use
+
+The following uses are permitted **without** prior written consent from the
+Author:
+
+- **Viewing** the source code for personal reference and learning.
+- **Forking** the repository on GitHub solely for the purpose of submitting a
+  Pull Request back to the original project. Forked copies must not be used,
+  distributed, or deployed publicly.
+- **Running a local development instance** for personal, non-commercial
+  evaluation only.
+
+## 4. Prohibited Use
+
+The following are **strictly prohibited** without prior written consent from
+the Author:
+
+- **Commercial use** of the Software, in whole or in part, including but not
+  limited to offering it as a paid service, embedding it in a commercial
+  product, or using it to generate revenue.
+- **Deployment** of the Software to any public-facing server, hosting
+  platform, or cloud environment (including but not limited to Vercel,
+  Netlify, Heroku, AWS, or any personal server) without explicit permission.
+- **Redistribution** of the Software, in source or binary form, whether
+  modified or unmodified.
+- **Modification** and subsequent distribution, publication, or deployment of
+  the Software.
+- **Removing or altering** any copyright notices, license terms, or
+  attribution within the Software.
+- **Using** the name "Testigo", the Author's name, or any associated branding
+  to endorse or promote products or services without written consent.
+
+## 5. Requests for Permission
+
+Any use of the Software not expressly permitted under Section 3 requires
+prior written consent from the Author. To request permission, open an issue
+at:
+
+    https://github.com/Qadyyr/Testigo/issues
+
+Permission, if granted, will be provided in writing and may be subject to
+terms and conditions at the Author's sole discretion.
+
+## 6. Contributions
+
+By submitting a Pull Request or any other contribution to this repository, you
+irrevocably grant the Author a perpetual, worldwide, non-exclusive,
+royalty-free, sublicensable, and transferable license to use, reproduce,
+modify, adapt, publish, distribute, and exploit the contribution in any way.
+The Author retains sole ownership and control of all accepted contributions.
+
+## 7. No Warranty
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## 8. Violations
+
+Unauthorized use of the Software constitutes a violation of this License and
+may infringe the Author's intellectual property rights. The Author reserves
+the right to pursue any and all legal remedies available.
+
+---
+
+*This license is effective as of July 2026 and supersedes any prior license
+terms associated with this repository.*
