@@ -30,6 +30,8 @@ Built for tutors, coaching centers, schools, and anyone who needs to run assessm
 
 ## Screenshots
 
+> All screenshots are in dark mode.
+
 <div align="center">
 
 ### Home — Enter a test code
@@ -203,6 +205,15 @@ The platform is live at **[testigo.site](https://testigo.site)**.
 - **Certification bodies** — high-stakes exams with single-use invite links
 - **Community surveys** — quick public polls with instant results
 - **Recruitment** — pre-interview screening tests
+
+---
+
+## Contributing
+
+This is a personal project, but feedback and suggestions are welcome. Feel free to:
+
+- Open an [issue](https://github.com/Qadyyr/Testigo-Showcase/issues) to report a bug or suggest a feature
+- Start a [discussion](https://github.com/Qadyyr/Testigo-Showcase/discussions) to share ideas
 
 ---
 
