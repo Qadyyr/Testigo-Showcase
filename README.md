@@ -217,6 +217,25 @@ This is a personal project, but feedback and suggestions are welcome. Feel free 
 
 ---
 
+## FAQ
+
+**Is Testigo open source?**
+No. The source code is private. This repository is a showcase only.
+
+**Do students need to create an account?**
+No. Students access tests using a 6-character code or a direct link provided by their teacher.
+
+**Can I self-host Testigo?**
+Not at this time. The platform is hosted at [testigo.site](https://testigo.site).
+
+**What question types are supported?**
+Multiple choice (single and multi-correct), true/false, and short answer with manual grading.
+
+**Is there a limit on the number of students?**
+No hard limit. The platform runs on serverless infrastructure that scales automatically.
+
+---
+
 ## License
 
 This is a personal project. The source code is private and not available for public use, modification, or distribution. The platform is showcased here for portfolio and demonstration purposes only.
